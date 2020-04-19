@@ -1,11 +1,25 @@
 {
   "name": "gatsby-source-dropinblog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A source plugin for the DropInBlog CMS",
+  "version": "0.0.2",
+  "author": "",
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "node-fetch": "^2.2.1"
   },
-  "author": "Joshua Hall",
-  "license": "ISC"
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "babel-preset-gatsby-package": "^0.1.2",
+    "cross-env": "^5.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./src --out-dir ./",
+    "watch": "babel -w src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.21.21"
+  }
 }
