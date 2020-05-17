@@ -1,8 +1,8 @@
 {
   "name": "gatsby-source-dropinblog",
   "description": "A source plugin for the DropInBlog CMS",
-  "version": "0.0.2",
-  "author": "",
+  "version": "0.0.7",
+  "author": "Joshua Hall",
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "node-fetch": "^2.2.1"
@@ -10,9 +10,12 @@
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
-    "babel-preset-gatsby-package": "^0.1.2",
-    "cross-env": "^5.2.0"
+    "babel-preset-gatsby-package": "^0.1.2"
   },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "babel ./src --out-dir ./",
@@ -21,5 +24,12 @@
   },
   "peerDependencies": {
     "gatsby": "^2.21.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DropInBlog/gatsby-source-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/DropInBlog/gatsby-source-plugin/issues"
   }
 }
