@@ -2,7 +2,7 @@
   "name": "gatsby-source-dropinblog",
   "description": "A source plugin for the DropInBlog CMS",
   "version": "0.0.7",
-  "author": "Joshua Hall",
+  "author": "DropInBlog",
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "node-fetch": "^2.2.1"
