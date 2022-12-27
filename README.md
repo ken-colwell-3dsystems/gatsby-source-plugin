@@ -21,6 +21,7 @@ In your `gatsby-config.js` file all you need to do is add the plugin with the id
         resolve: "gatsby-source-dropinblog",
         options: {
           id: "<YOUR_UNIQUE_ID>",
+          limit: "10",
         }
     },
   ],

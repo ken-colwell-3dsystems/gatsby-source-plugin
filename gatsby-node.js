@@ -11,7 +11,7 @@ exports.sourceNodes = async ({
     createNode
   } = actions; // * Posts
 
-  const postsQuery = await fetch(`https://api.dropinblog.com/v1/json/?b=${id}&includecontent=1`);
+  const postsQuery = await fetch(`https://api.dropinblog.com/v1/json/?b=${id}&includecontent=1&limit=${limit}`);
   const postData = await postsQuery.json();
   postData.data.posts.forEach(post => {
     const nodeMetadata = {
